@@ -6,12 +6,18 @@ World::World(Game* window)
 	, mBackground(nullptr)
 	, mPlayerAircraft(nullptr)
 	, mScrollSpeed(1.0f)
+	, mWorldBounds(-4.5f, 4.5f, -3.0f, 3.0f)
 	
 {
 }
 
 void World::update(const GameTimer& gt)
 {
+	if (mPlayerAircraft->getWorldPosition().x < mWorldBounds.x
+		|| mPlayerAircraft->getWorldPosition().x > mWorldBounds.y)
+	{
+		mPlayerAircraft->SetVelocity(XMFLOAT3(mPlayerAircraft->GetVelocity().x * -1.0f, 0, 0));
+	}
 	mSceneGraph->update(gt);
 }
 
