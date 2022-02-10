@@ -21,6 +21,8 @@ Aircraft::Aircraft(Type type, Game* game)
 
 void Aircraft::drawCurrent() const
 {
+	renderer->World = getWorldTransform();
+	renderer->NumFramesDirty++;
 }
 
 void Aircraft::buildCurrent()

@@ -1,12 +1,10 @@
 ﻿  Aircraft.cpp
-  Entity.cpp
   Game.cpp
 C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\GAM3015-A1\Game.cpp(26,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\GAM3015-A1\Game.cpp(336,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\GAM3015-A1\Game.cpp(325,60): warning C4305: 'argument': truncation from 'double' to 'float'
   Main.cpp
-  SceneNode.cpp
   SpriteNode.cpp
-C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\GAM3015-A1\SpriteNode.cpp(23,54): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\GAM3015-A1\SpriteNode.cpp(22,54): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
   World.cpp
   Generating Code...
   GAM3015-A1.vcxproj -> C:\Users\saeid\OneDrive\Desktop\GAME3015-A1-NeginSaeidi\GAM3015-A1\x64\Debug\GAM3015-A1.exe

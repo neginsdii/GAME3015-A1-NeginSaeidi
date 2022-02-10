@@ -95,13 +95,9 @@ $(document).ready(function(){initNavTree('class_game.html',''); initResizable();
 <div class="dynheader">
 Inheritance diagram for Game:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_game__inherit__graph.png" border="0" usemap="#a_game_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Game:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game__coll__graph.png" border="0" usemap="#a_game_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="class_game.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -206,6 +202,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4f5868aab9c96810369a9ab91dec1d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8184a727f9071c3db7e5efa3a6dce49"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="struct_render_item.html">RenderItem</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aa8184a727f9071c3db7e5efa3a6dce49">mAllRitems</a></td></tr>
 <tr class="separator:aa8184a727f9071c3db7e5efa3a6dce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626d5d97ee0e536b99703094828f5f79"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_render_item.html">RenderItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a626d5d97ee0e536b99703094828f5f79">mOpaqueRitems</a></td></tr>
+<tr class="separator:a626d5d97ee0e536b99703094828f5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76919fa066801494d7ec09b5a7c0eea9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_render_item.html">RenderItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a76919fa066801494d7ec09b5a7c0eea9">mRitemLayer</a> [(int) <a class="el" href="_game_8h.html#aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9">RenderLayer::Count</a>]</td></tr>
 <tr class="separator:a76919fa066801494d7ec09b5a7c0eea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2759008a4629646703b6e34e0501f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_pass_constants.html">PassConstants</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ad2759008a4629646703b6e34e0501f6c">mMainPassCB</a></td></tr>
@@ -1306,6 +1304,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::unordered_map&lt;std::string, std::unique_ptr&lt;Material&gt; &gt; Game::mMaterials</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a626d5d97ee0e536b99703094828f5f79" name="a626d5d97ee0e536b99703094828f5f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626d5d97ee0e536b99703094828f5f79">&#9670;&nbsp;</a></span>mOpaqueRitems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_render_item.html">RenderItem</a>*&gt; Game::mOpaqueRitems</td>
         </tr>
       </table>
   </td>

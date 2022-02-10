@@ -42,6 +42,7 @@ var class_game =
     [ "mLastMousePos", "class_game.html#ab5cce9551fdd8b346b36747d6f4d3a38", null ],
     [ "mMainPassCB", "class_game.html#ad2759008a4629646703b6e34e0501f6c", null ],
     [ "mMaterials", "class_game.html#a871400f233e46cc637f383106e89dd71", null ],
+    [ "mOpaqueRitems", "class_game.html#a626d5d97ee0e536b99703094828f5f79", null ],
     [ "mPSOs", "class_game.html#a43bb2ff24bf92a5d8dfb1a8ba110d33d", null ],
     [ "mRitemLayer", "class_game.html#a76919fa066801494d7ec09b5a7c0eea9", null ],
     [ "mRootSignature", "class_game.html#a987fac1aded1b4f4b9495eb0f1464c12", null ],

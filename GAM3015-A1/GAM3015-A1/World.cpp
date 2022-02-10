@@ -54,7 +54,7 @@ void World::buildScene()
 	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(mGame));
 	mBackground = backgroundSprite.get();
 	mBackground->setPosition(0, 0, 0.0);
-	mBackground->setScale(300, 1.0, 300);
+	mBackground->setScale(400, 1.0, 400);
 	mBackground->SetVelocity(0, 0, -mScrollSpeed);
 	mSceneGraph->attachChild(std::move(backgroundSprite));
 

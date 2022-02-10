@@ -85,21 +85,23 @@
 \DoxyCodeLine{112     std::vector<std::unique\_ptr<RenderItem>> \mbox{\hyperlink{class_game_aa8184a727f9071c3db7e5efa3a6dce49}{mAllRitems}};}
 \DoxyCodeLine{113 }
 \DoxyCodeLine{114     \textcolor{comment}{// Render items divided by PSO.}}
-\DoxyCodeLine{115 }
-\DoxyCodeLine{116     std::vector<RenderItem*> \mbox{\hyperlink{class_game_a76919fa066801494d7ec09b5a7c0eea9}{mRitemLayer}}[(int)\mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9}{RenderLayer::Count}}];}
-\DoxyCodeLine{117     \mbox{\hyperlink{struct_pass_constants}{PassConstants}} \mbox{\hyperlink{class_game_ad2759008a4629646703b6e34e0501f6c}{mMainPassCB}};}
-\DoxyCodeLine{118 }
-\DoxyCodeLine{119 }
+\DoxyCodeLine{115     std::vector<RenderItem*> \mbox{\hyperlink{class_game_a626d5d97ee0e536b99703094828f5f79}{mOpaqueRitems}};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118     std::vector<RenderItem*> \mbox{\hyperlink{class_game_a76919fa066801494d7ec09b5a7c0eea9}{mRitemLayer}}[(int)\mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9}{RenderLayer::Count}}];}
+\DoxyCodeLine{119     \mbox{\hyperlink{struct_pass_constants}{PassConstants}} \mbox{\hyperlink{class_game_ad2759008a4629646703b6e34e0501f6c}{mMainPassCB}};}
 \DoxyCodeLine{120 }
-\DoxyCodeLine{121     POINT \mbox{\hyperlink{class_game_ab5cce9551fdd8b346b36747d6f4d3a38}{mLastMousePos}};}
-\DoxyCodeLine{122     Camera \mbox{\hyperlink{class_game_a042dbbcf404fad865bdf72e534c675d5}{mCamera}};}
-\DoxyCodeLine{123     \mbox{\hyperlink{class_world}{World}} \mbox{\hyperlink{class_game_adbc6dc1be92656b79625575a5d84e110}{mWorld}};}
-\DoxyCodeLine{124 }
-\DoxyCodeLine{125 \textcolor{keyword}{public}:}
-\DoxyCodeLine{130     std::vector<std::unique\_ptr<RenderItem>>\& \mbox{\hyperlink{class_game_aab13f3fdd19f7fec4d64922e36cf3088}{getRenderItems}}();}
-\DoxyCodeLine{135     std::unordered\_map<std::string, std::unique\_ptr<Material>>\& \mbox{\hyperlink{class_game_a2ab854095110829c9fb607b8bf3b50e1}{getMaterials}}();}
-\DoxyCodeLine{140     std::unordered\_map<std::string, std::unique\_ptr<MeshGeometry>>\& \mbox{\hyperlink{class_game_a8fecc6dedc120a94d9940ad5d7518242}{getGeometries}}();}
-\DoxyCodeLine{141 }
-\DoxyCodeLine{142 \};}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     POINT \mbox{\hyperlink{class_game_ab5cce9551fdd8b346b36747d6f4d3a38}{mLastMousePos}};}
+\DoxyCodeLine{124     Camera \mbox{\hyperlink{class_game_a042dbbcf404fad865bdf72e534c675d5}{mCamera}};}
+\DoxyCodeLine{125     \mbox{\hyperlink{class_world}{World}} \mbox{\hyperlink{class_game_adbc6dc1be92656b79625575a5d84e110}{mWorld}};}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \textcolor{keyword}{public}:}
+\DoxyCodeLine{132     std::vector<std::unique\_ptr<RenderItem>>\& \mbox{\hyperlink{class_game_aab13f3fdd19f7fec4d64922e36cf3088}{getRenderItems}}();}
+\DoxyCodeLine{137     std::unordered\_map<std::string, std::unique\_ptr<Material>>\& \mbox{\hyperlink{class_game_a2ab854095110829c9fb607b8bf3b50e1}{getMaterials}}();}
+\DoxyCodeLine{142     std::unordered\_map<std::string, std::unique\_ptr<MeshGeometry>>\& \mbox{\hyperlink{class_game_a8fecc6dedc120a94d9940ad5d7518242}{getGeometries}}();}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144 \};}
 
 \end{DoxyCode}

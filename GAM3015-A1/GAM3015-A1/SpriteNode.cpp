@@ -7,8 +7,7 @@ SpriteNode::SpriteNode(Game* game)
 
 void SpriteNode::drawCurrent() const
 {
-	/*renderer->World = getTransform();
-	renderer->NumFramesDirty++;*/
+
 	renderer->World = getWorldTransform();
 	renderer->NumFramesDirty++;
 

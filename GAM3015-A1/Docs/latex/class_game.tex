@@ -4,14 +4,12 @@
 
 {\ttfamily \#include $<$Game.\+h$>$}
 
-
-
-Inheritance diagram for Game\+:
-% FIG 0
-
-
-Collaboration diagram for Game\+:
-% FIG 1
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -108,6 +106,8 @@ std\+::unordered\+\_\+map$<$ std\+::string, Com\+Ptr$<$ ID3\+D12\+Pipeline\+Stat
 std\+::vector$<$ D3\+D12\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC $>$ \mbox{\hyperlink{class_game_a4f5868aab9c96810369a9ab91dec1d2b}{m\+Input\+Layout}}
 \item 
 std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_render_item}{Render\+Item}} $>$ $>$ \mbox{\hyperlink{class_game_aa8184a727f9071c3db7e5efa3a6dce49}{m\+All\+Ritems}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_render_item}{Render\+Item}} $\ast$ $>$ \mbox{\hyperlink{class_game_a626d5d97ee0e536b99703094828f5f79}{m\+Opaque\+Ritems}}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{struct_render_item}{Render\+Item}} $\ast$ $>$ \mbox{\hyperlink{class_game_a76919fa066801494d7ec09b5a7c0eea9}{m\+Ritem\+Layer}} \mbox{[}(int) \mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9}{Render\+Layer\+::\+Count}}\mbox{]}
 \item 
@@ -451,6 +451,12 @@ Update function.
 \index{mMaterials@{mMaterials}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{mMaterials}{mMaterials}}
 {\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::unique\+\_\+ptr$<$Material$>$ $>$ Game\+::m\+Materials\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a626d5d97ee0e536b99703094828f5f79}\label{class_game_a626d5d97ee0e536b99703094828f5f79}} 
+\index{Game@{Game}!mOpaqueRitems@{mOpaqueRitems}}
+\index{mOpaqueRitems@{mOpaqueRitems}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mOpaqueRitems}{mOpaqueRitems}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_render_item}{Render\+Item}}$\ast$$>$ Game\+::m\+Opaque\+Ritems\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_game_a43bb2ff24bf92a5d8dfb1a8ba110d33d}\label{class_game_a43bb2ff24bf92a5d8dfb1a8ba110d33d}} 
 \index{Game@{Game}!mPSOs@{mPSOs}}

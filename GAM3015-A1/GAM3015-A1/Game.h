@@ -112,6 +112,8 @@ private:
     std::vector<std::unique_ptr<RenderItem>> mAllRitems;
 
     // Render items divided by PSO.
+    std::vector<RenderItem*> mOpaqueRitems;
+
 
     std::vector<RenderItem*> mRitemLayer[(int)RenderLayer::Count];
     PassConstants mMainPassCB;

@@ -1,6 +1,6 @@
 /**
-* @brief Aircraft class
-* creating Aircraft renderItem in this class
+* @brief Aircraft class.
+* Creats Aircraft renderItem
 *
 */
 #pragma once

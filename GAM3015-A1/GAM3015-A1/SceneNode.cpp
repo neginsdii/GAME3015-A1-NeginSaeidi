@@ -108,8 +108,8 @@ XMFLOAT4X4 SceneNode::getTransform() const
 {
 	XMFLOAT4X4 transform = MathHelper::Identity4x4();
 	XMMATRIX T = XMMatrixScaling(mworldScaling.x, mworldScaling.y, mworldScaling.z)
-		* XMMatrixTranslation(mWorldPosition.x, mWorldPosition.y, mWorldPosition.z)
-		* XMMatrixRotationRollPitchYaw(mWorldRotation.x, mWorldRotation.y, mWorldRotation.z);
+				* XMMatrixTranslation(mWorldPosition.x, mWorldPosition.y, mWorldPosition.z)
+				* XMMatrixRotationRollPitchYaw(mWorldRotation.x, mWorldRotation.y, mWorldRotation.z);
 	XMStoreFloat4x4(&transform, T);
 
 

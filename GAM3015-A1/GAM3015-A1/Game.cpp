@@ -237,18 +237,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 
 void Game::UpdateCamera(const GameTimer& gt)
 {
-	//// Convert Spherical to Cartesian coordinates.
-	//mEyePos.x = mRadius * sinf(mPhi) * cosf(mTheta);
-	//mEyePos.z = mRadius * sinf(mPhi) * sinf(mTheta);
-	//mEyePos.y = mRadius * cosf(mPhi);
-
-	// Build the view matrix.
-	/*XMVECTOR pos = XMVectorSet(mEyePos.x, mEyePos.y, mEyePos.z, 1.0f);
-	XMVECTOR target = XMVectorZero();
-	XMVECTOR up = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f);
-
-	XMMATRIX view = XMMatrixLookAtLH(pos, target, up);
-	XMStoreFloat4x4(&mView, view);*/
+	
 }
 
 void Game::AnimateMaterials(const GameTimer& gt)
@@ -613,7 +602,7 @@ void Game::BuildRenderItems()
 	mWorld.buildScene();
 	for (auto& e : mAllRitems)
 	{
-		//	mOpaqueRitems.push_back(e.get());
+		//mOpaqueRitems.push_back(e.get());
 
 		mRitemLayer[(int)RenderLayer::Opaque].push_back(e.get());
 		mRitemLayer[(int)RenderLayer::AlphaTested].push_back(e.get());

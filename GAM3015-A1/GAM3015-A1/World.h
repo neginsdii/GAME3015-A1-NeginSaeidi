@@ -1,6 +1,6 @@
 /**
 * @brief World class
-* creating game objectes in this class
+* Creats game objectes
 *
 */
 #pragma once
