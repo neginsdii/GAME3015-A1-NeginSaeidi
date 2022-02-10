@@ -1,0 +1,43 @@
+\hypertarget{_world_8h_source}{}\doxysection{World.\+h}
+\label{_world_8h_source}\index{GAM3015-\/A1/World.h@{GAM3015-\/A1/World.h}}
+\mbox{\hyperlink{_world_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_scene_node_8h}{SceneNode.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sprite_node_8h}{SpriteNode.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_aircraft_8h}{Aircraft.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_world}{World}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit}                            \mbox{\hyperlink{class_world_a712eb4a5b0d12588dd61d10c91b83366}{World}}(\mbox{\hyperlink{class_game}{Game}}* window);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void}                                \mbox{\hyperlink{class_world_a36c003f54e14e022a360551af5e7923e}{update}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void}                                \mbox{\hyperlink{class_world_ab51a17ccbb108616daacd0c34973dc8d}{draw}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void}                                \mbox{\hyperlink{class_world_ae7df49f5d488e5cd1254bf360966f410}{buildScene}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     \textcolor{keyword}{enum} \mbox{\hyperlink{class_world_a7580b1f38bb9018be3eeef74462b4b2f}{Layer}}}
+\DoxyCodeLine{37     \{}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_world_a7580b1f38bb9018be3eeef74462b4b2fa978d5e24a046c655c1a7d684c19bdcf0}{Background}},}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_world_a7580b1f38bb9018be3eeef74462b4b2fa130351e16065c2accbaba11e0441c03a}{Air}},}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_world_a7580b1f38bb9018be3eeef74462b4b2fab85a44d6989a43dc11f11bacedb2bf94}{LayerCount}}}
+\DoxyCodeLine{41     \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keyword}{private}:}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_game}{Game}}* \mbox{\hyperlink{class_world_a625a8dbdd805000904fb376215ca4c0a}{mGame}};}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_scene_node}{SceneNode}}* \mbox{\hyperlink{class_world_abf9d49d6f67de1caff82e111a4f29040}{mSceneGraph}};}
+\DoxyCodeLine{46     std::array<SceneNode*, 3>                         \mbox{\hyperlink{class_world_a3409d53a2a4a6f0eacf6d5e01b0909bc}{mSceneLayers}};}
+\DoxyCodeLine{47     XMFLOAT4                                          \mbox{\hyperlink{class_world_a3be772106be584dff01efa4a27fc13a7}{mWorldBounds}};}
+\DoxyCodeLine{48     XMFLOAT2                                          \mbox{\hyperlink{class_world_a2d65b6df609b3b2a963a51abedadf709}{mSpawnPostion}};}
+\DoxyCodeLine{49     \textcolor{keywordtype}{float}                                             \mbox{\hyperlink{class_world_a1c2d240ef6483547a5c2e5ded0e3a150}{mScrollSpeed}};}
+\DoxyCodeLine{50     \mbox{\hyperlink{class_aircraft}{Aircraft}}*                                         \mbox{\hyperlink{class_world_a5e511d7599995d30084959c91d98e13d}{mPlayerAircraft}};}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_aircraft}{Aircraft}}*                                         \mbox{\hyperlink{class_world_a86d9ebb6b531564784ea696fbc6148aa}{mLeftEscort}};}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_aircraft}{Aircraft}}*                                         \mbox{\hyperlink{class_world_a68bfeece547af22eb4a093e8c9f0721f}{mRightEscort}};}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_sprite_node}{SpriteNode}}*                                         \mbox{\hyperlink{class_world_a6f3b09177168e5a7b34fd9418a94136a}{mBackground}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+
+\end{DoxyCode}

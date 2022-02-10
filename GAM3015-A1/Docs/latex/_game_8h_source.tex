@@ -1,0 +1,105 @@
+\hypertarget{_game_8h_source}{}\doxysection{Game.\+h}
+\label{_game_8h_source}\index{GAM3015-\/A1/Game.h@{GAM3015-\/A1/Game.h}}
+\mbox{\hyperlink{_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_world_8h}{World.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{keyword}{enum class} \mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159}{RenderLayer}} : int}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159afaa90538de35640e4b1e31ccf35b6eb5}{Opaque}} = 0,}
+\DoxyCodeLine{11     \mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159a0627db3fa05f110738a259ea9a97a225}{AlphaTested}},}
+\DoxyCodeLine{12     \mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9}{Count}}}
+\DoxyCodeLine{13 \};}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}} : \textcolor{keyword}{public} D3DApp}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_game_a3f68a62a1fe1ca8dcd1deb054b384cef}{Game}}(HINSTANCE hInstance);}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_game_a293c79673d4c15f55f1ab7f3d1809ddb}{Game}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_game}{Game}}\& rhs) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_game}{Game}}\& \mbox{\hyperlink{class_game_a9bda5763ea460634fef947be2530c8f5}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_game}{Game}}\& rhs) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_a16354d232327f6c21319713bf6983674}{Initialize}}()\textcolor{keyword}{override};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{private}:}
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a7bd6d8d7aa09aa1196b4fa463d2ac41b}{OnResize}}()\textcolor{keyword}{override};}
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ab9244991993b5a1cbde3f1f2d73f2745}{Update}}(\textcolor{keyword}{const} GameTimer\& gt)\textcolor{keyword}{override};}
+\DoxyCodeLine{47     \textcolor{comment}{/*}}
+\DoxyCodeLine{48 \textcolor{comment}{    * @brief Draw function}}
+\DoxyCodeLine{49 \textcolor{comment}{    */}}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_afc62dae28f3cd775d8110ff5386c1fe1}{Draw}}(\textcolor{keyword}{const} GameTimer\& gt)\textcolor{keyword}{override};}
+\DoxyCodeLine{51     \textcolor{comment}{/*}}
+\DoxyCodeLine{52 \textcolor{comment}{    * @brief OnMouseDown}}
+\DoxyCodeLine{53 \textcolor{comment}{    * @param btnState button state, (int x, int y) coordinates of the mouse}}
+\DoxyCodeLine{54 \textcolor{comment}{    */}}
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a605e728835f29b7b320f6c9c8de05d00}{OnMouseDown}}(WPARAM btnState, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y)\textcolor{keyword}{override};}
+\DoxyCodeLine{56     \textcolor{comment}{/*}}
+\DoxyCodeLine{57 \textcolor{comment}{   * @brief OnMouseUp}}
+\DoxyCodeLine{58 \textcolor{comment}{   * @param btnState button state, (int x, int y) coordinates of the mouse}}
+\DoxyCodeLine{59 \textcolor{comment}{   */}}
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a020e0c5f01a724bfef357bfe29f800c3}{OnMouseUp}}(WPARAM btnState, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y)\textcolor{keyword}{override};}
+\DoxyCodeLine{61     \textcolor{comment}{/*}}
+\DoxyCodeLine{62 \textcolor{comment}{   * @brief OnMouseMove}}
+\DoxyCodeLine{63 \textcolor{comment}{   * @param btnState button state, (int x, int y) coordinates of the mouse}}
+\DoxyCodeLine{64 \textcolor{comment}{   */}}
+\DoxyCodeLine{65     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ada0f3fffa1b4560465128b1eff7d1ef5}{OnMouseMove}}(WPARAM btnState, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y)\textcolor{keyword}{override};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a97cb6124867ae61c31a23dfc22de3c6a}{OnKeyboardInput}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a077400cce3bd3e41333b8228b386e450}{UpdateCamera}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a7e0c6faa5f2386c3ad80fe5d5a9e11e4}{AnimateMaterials}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a1bdfe76a8bfdff007837cb2d2c3c59d6}{UpdateObjectCBs}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a4b7fd5dda779a7dd834dd7d26566b657}{UpdateMaterialCBs}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aa3bb0452e306c88eadfb2d4eedf5ad25}{UpdateMainPassCB}}(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ad23eba18656a646756a98bcda25a98a4}{LoadTextures}}();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aa02e07384ccea21f7421ca60967c1fa5}{BuildRootSignature}}();}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a62c79f98ef99a7ee0c54e3ae23ab0173}{BuildDescriptorHeaps}}();}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_adc0692c304c05a5a281d88622b39c498}{BuildShadersAndInputLayout}}();}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a6ee7b6d7f54345be7f6b406166dccb45}{BuildShapeGeometry}}();}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aa0934b45052f43934eb93fd013ca23a8}{BuildPSOs}}();}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a3f6f10460db9b4b5561656d6be357f4f}{BuildFrameResources}}();}
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a8150ddca90b1ce3c38becca970246d99}{BuildMaterials}}();}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_abf31d9be82e627510c9c2d6e0e012cc8}{BuildRenderItems}}();}
+\DoxyCodeLine{88     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a58fb5b65b969ba19ac0f5517c91bf9ae}{DrawRenderItems}}(ID3D12GraphicsCommandList* cmdList, \textcolor{keyword}{const} std::vector<RenderItem*>\& ritems);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     std::array<const CD3DX12\_STATIC\_SAMPLER\_DESC, 6> \mbox{\hyperlink{class_game_a6e8f674ef01b7480d39fe90374301c2d}{GetStaticSamplers}}();}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{keyword}{private}:}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     std::vector<std::unique\_ptr<FrameResource>> \mbox{\hyperlink{class_game_a2a9401ba48c48468ceef6771309ddff7}{mFrameResources}};}
+\DoxyCodeLine{95     \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* \mbox{\hyperlink{class_game_a6119ac12b9dafae4e105ac9b4e80c1b2}{mCurrFrameResource}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{96     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_game_a1f687875ba94b87162a7dc90b80b0092}{mCurrFrameResourceIndex}} = 0;}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     UINT \mbox{\hyperlink{class_game_ad7a064571877d4b8becd1f53c98cafa9}{mCbvSrvDescriptorSize}} = 0;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     ComPtr<ID3D12RootSignature> \mbox{\hyperlink{class_game_a987fac1aded1b4f4b9495eb0f1464c12}{mRootSignature}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     ComPtr<ID3D12DescriptorHeap> \mbox{\hyperlink{class_game_a85befdbe03bbcdd30ad94cd64e0a1bd1}{mSrvDescriptorHeap}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     std::unordered\_map<std::string, std::unique\_ptr<MeshGeometry>> \mbox{\hyperlink{class_game_a0e53612a0a54bdd46ea1d8b071260b77}{mGeometries}};}
+\DoxyCodeLine{105     std::unordered\_map<std::string, std::unique\_ptr<Material>> \mbox{\hyperlink{class_game_a871400f233e46cc637f383106e89dd71}{mMaterials}};}
+\DoxyCodeLine{106     std::unordered\_map<std::string, std::unique\_ptr<Texture>> \mbox{\hyperlink{class_game_a914940e399d2418018640ef3da130371}{mTextures}};}
+\DoxyCodeLine{107     std::unordered\_map<std::string, ComPtr<ID3DBlob>> \mbox{\hyperlink{class_game_a5d821a872c24ff21b97300d24e37ac23}{mShaders}};}
+\DoxyCodeLine{108     std::unordered\_map<std::string, ComPtr<ID3D12PipelineState>> \mbox{\hyperlink{class_game_a43bb2ff24bf92a5d8dfb1a8ba110d33d}{mPSOs}};}
+\DoxyCodeLine{109     std::vector<D3D12\_INPUT\_ELEMENT\_DESC> \mbox{\hyperlink{class_game_a4f5868aab9c96810369a9ab91dec1d2b}{mInputLayout}};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111     \textcolor{comment}{// List of all the render items.}}
+\DoxyCodeLine{112     std::vector<std::unique\_ptr<RenderItem>> \mbox{\hyperlink{class_game_aa8184a727f9071c3db7e5efa3a6dce49}{mAllRitems}};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     \textcolor{comment}{// Render items divided by PSO.}}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     std::vector<RenderItem*> \mbox{\hyperlink{class_game_a76919fa066801494d7ec09b5a7c0eea9}{mRitemLayer}}[(int)\mbox{\hyperlink{_game_8h_aa63ede3e7371d4bc358f651428d23159ae93f994f01c537c4e2f7d8528c3eb5e9}{RenderLayer::Count}}];}
+\DoxyCodeLine{117     \mbox{\hyperlink{struct_pass_constants}{PassConstants}} \mbox{\hyperlink{class_game_ad2759008a4629646703b6e34e0501f6c}{mMainPassCB}};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     POINT \mbox{\hyperlink{class_game_ab5cce9551fdd8b346b36747d6f4d3a38}{mLastMousePos}};}
+\DoxyCodeLine{122     Camera \mbox{\hyperlink{class_game_a042dbbcf404fad865bdf72e534c675d5}{mCamera}};}
+\DoxyCodeLine{123     \mbox{\hyperlink{class_world}{World}} \mbox{\hyperlink{class_game_adbc6dc1be92656b79625575a5d84e110}{mWorld}};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 \textcolor{keyword}{public}:}
+\DoxyCodeLine{130     std::vector<std::unique\_ptr<RenderItem>>\& \mbox{\hyperlink{class_game_aab13f3fdd19f7fec4d64922e36cf3088}{getRenderItems}}();}
+\DoxyCodeLine{135     std::unordered\_map<std::string, std::unique\_ptr<Material>>\& \mbox{\hyperlink{class_game_a2ab854095110829c9fb607b8bf3b50e1}{getMaterials}}();}
+\DoxyCodeLine{140     std::unordered\_map<std::string, std::unique\_ptr<MeshGeometry>>\& \mbox{\hyperlink{class_game_a8fecc6dedc120a94d9940ad5d7518242}{getGeometries}}();}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142 \};}
+
+\end{DoxyCode}

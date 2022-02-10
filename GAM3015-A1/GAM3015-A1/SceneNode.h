@@ -1,3 +1,6 @@
+/**
+* @brief SceneNode class
+*/
 #pragma once
 #include "../../Common/d3dApp.h"
 #include "../../Common/MathHelper.h"
@@ -54,25 +57,78 @@ class SceneNode
 {
 public:
 	typedef std::unique_ptr<SceneNode> Ptr;
-
+	/// <summary>
+	/// SceneNode class constructor
+	/// </summary>
+	/// <param name="_game">pointer to game class</param>
 	SceneNode(Game* _game);
+	/// <summary>
+	/// attachChild function.
+	/// Adds sceneNodes to mChildren
+	/// </summary>
+	/// <param name="child">pointer to a sceneNode</param>
 	void				attachChild(Ptr child);
+	/// <summary>
+	/// detachChild function.
+	/// </summary>
+	/// Removes sceneNode from mChildren
+	/// <param name="node">referance to a sceneNode</param>
+	/// <returns>pointer to the removed sceneNode</returns>
 	Ptr					detachChild(const SceneNode& node);
-
+	/// <summary>
+	/// update function.
+	/// </summary>
+	/// <param name="gt">referance to GameTimer</param>
 	void				update(const GameTimer& gt);
+	/// <summary>
+	/// Draw function
+	/// </summary>
 	void				draw() const;
+	/// <summary>
+	/// Build function
+	/// </summary>
 	void				build();
-
+	/// <summary>
+	/// getWorldPosition function
+	/// </summary>
+	/// <returns>mWorldPosition</returns>
 	XMFLOAT3			getWorldPosition() const;
+	/// <summary>
+	/// setPosition function
+	/// </summary>
 	void				setPosition(float x, float y, float z);
+	/// <summary>
+	/// getWorldRotation fucntion
+	/// </summary>
+	/// <returns>mWorldRotation</returns>
 	XMFLOAT3			getWorldRotation() const;
+	/// <summary>
+	/// setRotation function
+	/// </summary>
 	void				setRotation(float x, float y, float z);
+	/// <summary>
+	/// getWorldScale function
+	/// </summary>
+	/// <returns>mworldScaling</returns>
 	XMFLOAT3			getWorldScale() const;
+	/// <summary>
+	/// setScale function
+	/// </summary>
 	void				setScale(float x, float y, float z);
-
+	/// <summary>
+	/// getWorldTransform function
+	/// </summary>
+	/// <returns>XMFLOAT4X4</returns>
 	XMFLOAT4X4			getWorldTransform() const;
+	/// <summary>
+	/// getTransform fucntion
+	/// </summary>
+	/// <returns>XMFLOAT4X4</returns>
 	XMFLOAT4X4			getTransform()	const;
-
+	/// <summary>
+	/// move function.
+	/// Adds to position of the sceneNode
+	/// </summary>
 	void				move(float x, float y, float z);
 private:
 	virtual void		updateCurrent(const GameTimer& gt);

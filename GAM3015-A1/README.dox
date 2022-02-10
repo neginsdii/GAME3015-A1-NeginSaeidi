@@ -1,0 +1,13 @@
+/**
+*@mainpage GAME3015-A1-NeginSaeidi
+*@author Negin Saeidi - 101261395
+*@brief Aircraft shooter using DirectX 12 (C++).
+*This project contains these following classes:
+*1- Game
+*2- World
+*3- SceneNode
+*4- Entity
+*5- SpriteNode
+*6- Aircraft
+* @attention Camera moves with WASD and rotates with mouse 
+*/
